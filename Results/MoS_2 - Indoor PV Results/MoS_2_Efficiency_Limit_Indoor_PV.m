@@ -49,7 +49,7 @@ Material_n2 = Material_n ^ 2; % n ^ 2, also no units
 
 % Define spectrum directory, light sources and intensities (in lux)
 Spectrum_Directory = strcat(Main_Directory, "Data/Spectrum/");
-Spectra_Names = ["LED"; "ESL"; "Halogen"; "Real AM15G"];
+Spectra_Names = ["LED"; "ESL"; "Halogen"; "AM15G"];
 Intensities = [50; 150; 400; 500]; % units: lux
 
 % Make sure that the material's alpha_2 data and spectrum data are as a function
