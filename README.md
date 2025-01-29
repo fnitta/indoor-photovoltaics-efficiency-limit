@@ -1,5 +1,5 @@
 # Efficiency Limit of Solar Cells Under Various Indoor Lighting Conditions
-This repository contains MATLAB code to calculate the fundamental performance limits of single-junction solar cells with a realistic analysis based on the Tiedje-Yablonovitch model and including defect-assisted Shockley-Read-Hall (SRH) recombination. It calculates current density-voltage (J-V) characteristics and key photovoltaic parameters: short-circuit current (J<sub>sc</sub>), open-circuit voltage (V<sub>oc</sub>), fill factor (FF), and power conversion efficiency (eff). The MATLAB code also allows for visual representation of these parameters through plots to better understand the efficiency trends with varying thicknesses. Our work focuses on the efficiency limits of multilayer MoS<sub>2</sub>, MoSe<sub>2</sub>, WS<sub>2</sub>, and WSe<sub>2</sub> solar cells under compact fluorescent lamp (CFL), light-emitting diode (LED) lamp, halogen lamp, and low-light AM 1.5 G illumination. However, this code can be applied to calculate the efficiency limits of any material under any spectrum.
+This repository contains MATLAB code to calculate the fundamental performance limits of single-junction solar cells with a realistic analysis based on the Tiedje-Yablonovitch model and including defect-assisted Shockley-Read-Hall (SRH) recombination. It calculates current density-voltage (J-V) characteristics and key photovoltaic parameters: short-circuit current (_J_<sub>SC</sub>), open-circuit voltage (_V_<sub>OC</sub>), fill factor (FF), and power conversion efficiency (PCE). The MATLAB code also allows for visual representation of these parameters through plots to better understand the efficiency trends with varying thicknesses. Our work focuses on the efficiency limits of multilayer MoS<sub>2</sub>, MoSe<sub>2</sub>, WS<sub>2</sub>, and WSe<sub>2</sub> solar cells under compact fluorescent lamp (CFL), light-emitting diode (LED) lamp, halogen lamp, and low-light AM 1.5 G illumination, and at 50, 150, 400, and 500 lux. However, this code can be applied to calculate the efficiency limits of any material under any spectrum.
 
 This README serves two purposes:
 1. It provides an overview of the MATLAB code we employed to produce the results presented in our paper.
@@ -13,14 +13,14 @@ All of the data needed to reproduce the results in our paper is in this reposito
   - Initializes electrical parameters (band gap, effective electron mass, and effective hole mass) in Lines 21 - 23, and optical constants (n and k) in Lines 35 - 39.
   - Defines spectra in Lines 52 - 53.
   - Initializes recombination parameters in Lines 68 - 70.
-  - Range of thicknesses defined in Line 82. Thickness(es) to generate J-V curves for are defined in Line 83 (note: make sure that the thicknesses are in ascending order, and are in the range of thicknesses).
+  - Range of thicknesses defined in Line 82. Thickness(es) to generate _J_-_V_ curves for are defined in Line 83 (note: make sure that the thicknesses are in ascending order, and are in the range of thicknesses).
   - Defines directory paths to store output data and figures.
 
 1. Efficiency Limits via Shockley-Queisser (SQ) Model
-  - Generates J-V characteristics and calculates J<sub>sc</sub>, V<sub>oc</sub>, FF, and eff using the SQ model.
+  - Generates J-V characteristics and calculates _J_<sub>SC</sub>, _V_<sub>OC</sub>, FF, and PCE using the SQ model.
 
 2. Efficiency Limits via Extended Tiedje-Yablonovitch (TY) Model
-  - Uses Equation 11 from Supplementary Note 1 (extended TY model) to generate J-V characteristics and calculate V<sub>oc</sub>, J<sub>sc</sub>, FF, and eff for a range of thicknesses.
+  - Uses Equation 11 from Supplementary Note 1 (extended TY model) to generate _J_-_V_ characteristics and calculate _V_<sub>OC</sub>, _J_<sub>SC</sub>, FF, and PCE for a range of thicknesses.
   - Analysis of recombination magnitude is conducted. Data includes recombination units and recombination mechanism lifetimes in units of mA cm<sup>-2</sup>, and all recombination mechanism lifetimes in units of seconds.
 
 3. Data Visualization
